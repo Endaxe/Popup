@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .popup {
+            position: absolute;
+            left: 30vw;
+            bottom: 1vw;
+            padding: 1rem;
+            width: 30%;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="popup">
+        <p>Genom att klicka på 
+            "acceptera alla cookies" samtycker du till lagring av cookies på din enhet för 
+            att förbättra navigeringen på webbplatsen, analysera webbplatsens användning och 
+            bistå i våra marknadsföringsinsatser.</p>
+            <a href="info">Läs mer</a>
+        <button id="deny">Nej</button>
+        <button id="accept">Jag accepterar</button>
+    </div>
+
+    <script>
+        const accept = document.querySelector("#accept");
+        const deny = document.querySelector("#deny");
+        const div = document.querySelector("div");
+        
+        
+        accept.addEventListener('click', (event) => {
+            console.log('accept');
+            div.classList.add("hidden");
+
+        })
+
+        deny.addEventListener('click', (event) => {
+            console.log('deny');
+            div.classList.add("hidden");
+        
+    })
+    </script>
+</body>
+
+</html>

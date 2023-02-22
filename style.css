@@ -1,0 +1,25 @@
+
+p {
+    color: white;
+}
+.popup{
+border-radius: 25px;
+background-color: #333;
+border: 1px black;
+padding: 15px;
+width: 400px;
+height: 120px;
+}
+
+button {
+    border-radius: 15px;
+    border: #333;;
+}
+
+a {
+    color: aquamarine;
+}
+
+a:hover {
+    color: purple;
+}
